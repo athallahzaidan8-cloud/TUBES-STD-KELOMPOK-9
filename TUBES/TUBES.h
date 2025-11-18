@@ -1,6 +1,32 @@
-#ifndef TUBES_H_INCLUDED
-#define TUBES_H_INCLUDED
+#ifndef DLL_H_INCLUDED
+#define DLL_H_INCLUDED
+#include <iostream>
 
+using namespace std;
 
+typedef int infotype;
+typedef struct elmlist *address;
 
-#endif // TUBES_H_INCLUDED
+struct elmlist{
+    infotype info;
+    address next;
+    address prev;
+};
+
+struct list {
+    address first;
+    address last;
+};
+
+void createList_103032400033(list &L);
+bool isEmpty_103032400033(list L);
+address allocate_103032400033(infotype x);
+void printInfo_103032400033(list L);
+void insertFirst_103032400033(list &L, address p);
+void insertLast_103032400033(list &L, address p);
+void deleteFirst_103032400033(list &L, address &p);
+void deleteLast_103032400033(list &L, address &p);
+void printInfoFrontToBack_103032400033(list L);
+void printInfoBackToFront_103032400033(list L);
+
+#endif // DLL_H_INCLUDED
