@@ -1,6 +1,0 @@
-#ifndef MUSIK_H_INCLUDED
-#define MUSIK_H_INCLUDED
-
-
-
-#endif // MUSIK_H_INCLUDED
